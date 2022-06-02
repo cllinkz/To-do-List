@@ -6,21 +6,45 @@
 
 html,
 body {
-  width: 50%;
-  margin: 0 auto;
+  /* width: 50%; */
+  width: 100%;
+  background-color: #e9ecef;
+  /* margin: 0 auto; */
   font-family: Arial, Helvetica, sans-serif;
+  display: block;
 }
 
 .container {
   width: 400px;
 }
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
+.firstToDoList {
+  background-color: #ff6b6b;
+  padding: 50px 50px;
+  margin: 50px 50px;
+}
+.secondToDoList {
+  background-color: #94d82d;
+  padding: 50px 50px;
+  margin: 50px 50px;
+}
+.thirdToDoList {
+  background-color: #51cf66;
+  padding: 50px 50px;
+  margin: 50px 50px;
+}
 .heading {
   width: 400;
   text-align: center;
 }
 
-#inputField {
+#inputField,
+#inputField2,
+#inputField3 {
   width: 300px;
   height: 50px;
   border: 1px solid black;
@@ -29,7 +53,9 @@ body {
   vertical-align: middle;
 }
 
-#addToDo {
+#addToDo,
+#addToDo2,
+#addToDo3 {
   height: 50px;
   width: 70px;
   border: 1px solid black;
@@ -43,6 +69,10 @@ body {
 
 .paragraph-styling {
   margin: 0;
+  margin-bottom: 5px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 24px;
+  border: 0.2px solid black;
+  background-color: white;
+  width: 93%;
 }
